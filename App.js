@@ -1,8 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { useFonts} from 'expo-font';
-import * as Splashscreen from "expo-splash screen";
-import { useCallback} from 'react';
+import {StatusBar} from 'expo-status-bar';
+import {StyleSheet, Text, View} from 'react-native';
+import {useFonts} from 'expo-font';
+import * as SplashScreen from "expo-splash-screen";
+import {useCallback} from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack'
 export default function App() {
 const [fontsLoaded] = useFonts({
     regular: require('./assets/fonts/regular.otf'),
@@ -16,13 +18,13 @@ const onLayoutRootView = useCallback(async () => {
     if(fontsLoaded){
         await Splashscreen.hideAsync()
     }
-},[fontsLoaded]);
+}, [fontsLoaded]);
 if(!fontsLoaded){
     return null;
 }
   return (
     <View style={styles.container}>
-      <Text style={style.textStyle}>Open up App.js to start working on your app!</Text>
+      <Text style={styles.textStyle}>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
