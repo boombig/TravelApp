@@ -1,18 +1,18 @@
 import {Text, View,StyleSheet} from 'react-native';
 import React from 'react';
-// import styles from '../Onboard/slides.style';
-const ReusableText = ({text, family, size, color}) => {
+const ReusableText = ({text, family, size, color,align}) => {
     return(
-       <Text style={styles.textStyles(family,size,color)}>{text}</Text>
+       <Text style={styles.textStyles(family, size, color, align)}>{text}</Text>
     )
 }
 
-export default ReusableText
+export default ReusableText;
 
 const styles = StyleSheet.create({
-    textStyles:(family, size, color)=>({
-        fontFamily:family,
-        fontSize:size,
-        color:color
+    textStyles: (family, size, color,align)=> ({
+        fontFamily: family,
+        fontSize: size,
+        color: color,
+        textAlign: align
     })
 })

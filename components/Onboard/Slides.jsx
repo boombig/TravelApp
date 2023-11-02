@@ -1,22 +1,39 @@
-import {Text, View,Image} from 'react-native';
+import {Text, View,Image,ImageBackground} from "react-native";
 import React from 'react';
 import styles from './slides.style';
-import ReusableText from "../Reusable/ReusableText";
-import { COLORS,SIZES} from '../../constants/theme';
+import {HeightSpacer, ReusableBtn, ReusableText} from "../../components/index";
+import {COLORS,SIZES} from "../../constants/theme";
+import { useNavigation } from "@react-navigation/native";
+import {BottomTabNavigation} from "../../navigation/BottomTabNavigation";
 const Slides = ({item}) => {
-    return(
+    const navigation = useNavigation();
+    return (
         <View>
-            <Image source={item.image} style={styles.name}/>
+            <ImageBackground source={item.image} style={styles.image} >
             <View style={styles.stack}>
+
                 <ReusableText
                 text={item.title}
-                family={'medium'}
-                size={SIZES.xxlarge}
+                family={"medium"}
+                size={SIZES.xxLarge}
                 color={COLORS.white}
                 />
-            </View>
-        </View>
-    )
-}
 
-export default Slides
+                <HeightSpacer height={20}/>
+
+                <ReusableBtn
+                onPress={() => navigation.navigate('Bottom')}
+                btnText={"Let's go"}
+                width={(SIZES.width - 50)/2.2}
+                backgroundColor={COLORS.red}
+                borderColor={COLORS.red}
+                borderWidth={0}
+                textColor={COLORS.white}
+                />
+            </View>
+            </ImageBackground>
+        </View>
+    );
+};
+
+export default Slides;
