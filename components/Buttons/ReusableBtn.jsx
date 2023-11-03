@@ -16,7 +16,7 @@ export default ReusableBtn;
 const styles=StyleSheet.create({
     btnText: (textColor) =>({
         fontFamily:"medium",
-        fontSize: SIZES.xxxLarge,
+        fontSize: SIZES.large,
         color: textColor
     }),
     btnStyle:(width, backgroundColor, borderWidth, borderColor) => ({

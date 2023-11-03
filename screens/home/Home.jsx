@@ -4,10 +4,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import reusable from "../../components/Reusable/reusable.style";
 import { SIZES, TEXT } from "../../constants/theme";
 import {AntDesign} from "@expo/vector-icons";
-import styles from "./home.style";
 import { HeightSpacer, ReusableText,Places, Recommendation, BestHotels } from "../../components/index";
 import { COLORS } from "../../constants/theme";
-const Home = () => {
+import styles from "./home.style";
+const Home = ({navigation}) => {
     return(
         <SafeAreaView style={reusable.container.container}>
             <View>
@@ -19,10 +19,10 @@ const Home = () => {
                 color={COLORS.black}
                 />
                 <TouchableOpacity style={styles.box}
-                onPress={()=> navigation.navigate('Search')}>
+                onPress={()=> navigation.navigate("Search")}>
                     <AntDesign
                     name='search1'
-                    size={26}
+                    size={24}
                     />
                 </TouchableOpacity>
                 </View>

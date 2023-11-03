@@ -27,7 +27,7 @@ const Slides = ({item}) => {
                 width={(SIZES.width - 50)/2.2}
                 backgroundColor={COLORS.red}
                 borderColor={COLORS.red}
-                borderWidth={0}
+                borderWidth={10}
                 textColor={COLORS.white}
                 />
             </View>

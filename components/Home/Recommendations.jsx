@@ -93,6 +93,7 @@ export default Recommendation
 const styles=StyleSheet.create({
     container:{
         paddingTop:30,
+        paddingLeft:10,
 
     },
 })

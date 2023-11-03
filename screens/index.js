@@ -8,6 +8,8 @@ import CountryDetails from "./details/CountryDetails";
 import Recommended from "./details/Recommended";
 import PlaceDetails from "./details/PlaceDetails";
 import HotelDetails from "./details/HotelDetails";
+import HotelList from "./details/HotelList";
+import HotelSearch from "./search/HotelSearch";
 export{
     Onboarding,
     Home,
@@ -18,5 +20,7 @@ export{
     CountryDetails,
     Recommended,
     PlaceDetails,
-    HotelDetails
+    HotelDetails,
+    HotelList,
+    HotelSearch
 }

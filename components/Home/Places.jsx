@@ -1,7 +1,6 @@
 import {FlatList, StyleSheet, Text, View,VirtualizedList} from "react-native";
 import React from 'react';
 import HeightSpacer from "../Reusable/HeightSpacer";
-import { date } from "yup";
 import { SIZES } from "../../constants/theme";
 import { Country } from "..";
 
@@ -54,7 +53,7 @@ const Places = () => {
        },
    ]
     return(
-        <View>
+        <View style={styles.container}>
             <HeightSpacer height={20}/>
             <VirtualizedList
             data={countries}
@@ -74,3 +73,11 @@ const Places = () => {
 }
 
 export default Places
+
+const styles=StyleSheet.create({
+  container:{
+      paddingTop:10,
+      paddingLeft:10,
+
+  },
+})

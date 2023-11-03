@@ -4,8 +4,8 @@ import { COLORS } from "../../constants/theme";
 const styles = StyleSheet.create({
     box:{
         backgroundColor: COLORS.white,
-        width:40,
-        height:20,
+        width:50,
+        height:25,
         borderRadius:12,
         alignItems:"center",
         justifyContent:"center"
