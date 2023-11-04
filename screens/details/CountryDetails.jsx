@@ -41,7 +41,7 @@ const CountryDetails = ({navigation}) => {
                 <View>
                     <NetworkImage
                     source={country.imageUrl}
-                    width={"100"}
+                    width={"100%"}
                     height={350}
                     radius={30}
                     />
