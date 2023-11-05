@@ -13,6 +13,7 @@ import AppBar from "./Reusable/AppBar";
 import DescriptionText from "./Reusable/DescriptionText";
 import PopularList from "./Country/PopularList";
 import HotelMap from "./Hotel/HotelMap";
+import ReviewsList from "./Hotel/ReviewsList";
 export{
     ReusableText,
     ReusableBtn,
@@ -28,5 +29,6 @@ export{
     AppBar,
     DescriptionText,
     PopularList, 
-    HotelMap
+    HotelMap,
+    ReviewsList
 }

@@ -1,14 +1,13 @@
 import { StyleSheet } from "react-native";
 import { COLORS } from "../../constants/theme";
-
-const styles= StyleSheet.create({
+const styles = StyleSheet.create({
     container:{
         paddingTop:20,
         marginHorizontal:20
     },
     titleContainer:{
         margin:15,
-        backgroundColor:COLORS.lightWhite,
+        backgroundColor: COLORS.lightWhite,
         height:130,
         position:"absolute",
         top:170,
@@ -17,7 +16,13 @@ const styles= StyleSheet.create({
         borderRadius:20
     },
     titleColumn:{
-        padding:20
+        padding:20,
+    },
+    bottom:{
+        paddingHorizontal:30,
+        backgroundColor:COLORS.lightWhite,
+        height:90,
+        paddingVertical:20
     }
 })
 
