@@ -18,11 +18,31 @@ const styles = StyleSheet.create({
         width:"100%",
         height:"100%",
         paddingHorizontal:70,
+        backgroundColor:COLORS.white,
+        borderRadius:SIZES.small,
+    },
+    searchImage:{
+        resizeMode:"contain",
+        width:"100%",
+        height:SIZES.height,
+        paddingHorizontal:20    
     },
     searchWrapper:{
         flex:1,
         marginRight:SIZES.small,
         borderRadius:SIZES.small
+    },
+    searchBtn:{
+        width:50,
+        height:"100%",
+        borderRadius:SIZES.small,
+        justifyContent: "center",
+        alignContent: "center",
+        backgroundColor:COLORS.lightBlue
+    },
+    title:{
+        marginHorizontal:12,
+        marginBottom:10
     }
 })
 
