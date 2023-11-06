@@ -15,11 +15,11 @@ const styles = StyleSheet.create({
     }, 
     input:{
         fontFamily:'regular',
-        width:"100%",
+        width:"120%",
         height:"100%",
         paddingHorizontal:70,
         backgroundColor:COLORS.white,
-        borderRadius:SIZES.small,
+        borderRadius:SIZES.large
     },
     searchImage:{
         resizeMode:"contain",

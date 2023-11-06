@@ -2,7 +2,7 @@ import { FlatList, StyleSheet, Text, View, ScrollView, TouchableOpacity } from "
 import React from 'react';
 import { AppBar, DescriptionText, HeightSpacer, HotelMap, NetworkImage, ReusableBtn, ReusableText, ReviewsList } from "../../components";
 import { COLORS, SIZES, TEXT } from "../../constants/theme";
-import styles from "./hotelDetails";
+import styles from "./HotelDetails";
 import reusable from "../../components/Reusable/reusable.style";
 import { Rating } from 'react-native-stock-star-rating'
 import { Feather } from '@expo/vector-icons'

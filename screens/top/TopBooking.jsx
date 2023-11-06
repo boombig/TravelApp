@@ -1,11 +1,10 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import React from 'react';
-import { SafeAreaView } from "react-native-safe-area-context";
-import AppBar from "../../components/Reusable/AppBar";
+import { ReusableText, ReusableTile } from "../../components";
 import { COLORS } from "../../constants/theme";
-import { ReusableTile } from "../../components";
+import reusable from "../../components/Reusable/reusable.style";
 
-const HotelList = ({ navigation }) => {
+const TopBookings = () => {
     const hotels = [
         {
             "_id": "64c674d23cfa5e847bcd5430",
@@ -53,38 +52,23 @@ const HotelList = ({ navigation }) => {
             "location": "New York City, NY"
         }
     ]
-
     return (
-        <SafeAreaView style={{ marginHorizontal: 20 }}>
-            <View style={{ height: 45 }}>
-                <AppBar
-                    top={10}
-                    left={0}
-                    right={0}
-                    title={'Nearby Hotels'}
-                    color={COLORS.white}
-                    icon={'search1'}
-                    color1={COLORS.white}
-                    onPress={() => navigation.goBack()}
-                    onPress1={() => navigation.navigate('HotelSearch')}
-                />
-            </View>
-            <View style={{ paddingTop: 20 }}>
+        <View style={{ margin: 20 }}>
+            <FlatList
+                data={hotels}
+                showsVerticalScrollIndicator={false}
+                keyExtractor={(item) => item._id}
+                renderItem={({ item }) => (
+                    <View style={{ backgroundColor: COLORS.lightWhite, borderRadius: 16, marginBottom: 10 }}>
+                        <ReusableTile item={item} />
+                        <View style={reusable.rowWithSpace('space-between')}>
 
-                <FlatList
-                    data={hotels}
-                    keyExtractor={(item) => item._id}
-                    renderItem={({ item }) => (
-                        <View style={{ marginBottom: 10 }}>
-                            <ReusableTile
-                                item={item}
-                                onPress={() => navigation.navigate("HotelDetails", item._id)} />
                         </View>
-                    )}
-                />
-            </View>
-        </SafeAreaView>
+                    </View>
+                )}
+            />
+        </View>
     )
 }
 
-export default HotelList
+export default TopBookings
