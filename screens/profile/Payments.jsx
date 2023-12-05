@@ -1,12 +1,12 @@
 import {FlatList, StyleSheet, Text, View} from "react-native";
 import React from 'react';
 
-const TopTrips = () => {
+const Payments = () => {
     return(
-        <View >
-            
+        <View>
+
         </View>
     )
 }
 
-export default TopTrips
+export default Payments

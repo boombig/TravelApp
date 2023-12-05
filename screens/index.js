@@ -14,6 +14,8 @@ import SelectRoom from "./details/SelectRoom";
 import TopInfo from "./top/TopInfo";
 import TopTrips from "./top/TopTrips";
 import TopBookings from "./top/TopBooking";
+import Settings from "./settings/Settings";
+import Payments from "./profile/Payments";
 export{
     Onboarding,
     Home,
@@ -31,4 +33,6 @@ export{
     TopInfo,
     TopTrips,
     HotelDetails,
+    Payments,
+    Settings
 }
