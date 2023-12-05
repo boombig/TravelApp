@@ -27,13 +27,14 @@ const Settings = ({ navigation }) => {
                 <SettingTile title={'Language'} />
 
                 <HeightSpacer height={3} />
+
                 <SettingTile title={'Country'} title1={'USA'} />
 
                 <HeightSpacer height={3} />
 
                 <SettingTile title={'Currency'} title1={'USD'} />
 
-
+                <HeightSpacer height={40} />
 
                 <ReusableText
                     text={"Support"}
@@ -41,18 +42,15 @@ const Settings = ({ navigation }) => {
                     size={SIZES.xLarge - 5}
                     color={COLORS.black}
                 />
+                <HeightSpacer height={10}/>
 
-                <HeightSpacer height={40} />
-
-                <SettingTile title={'Get Help'} title1={'USA'} />
+                <SettingTile title={'Get Help'} title1={""} />
 
                 <HeightSpacer height={3} />
 
-                <SettingTile title={'Give a feedback'} title1={'USA'} />
+                <SettingTile title={'Give a feedback'} title1={""} />
 
                 <HeightSpacer height={40} />
-
-                <HeightSpacer height={10} />
 
                 <ReusableText
                     text={"Legal"}
@@ -60,7 +58,13 @@ const Settings = ({ navigation }) => {
                     size={SIZES.xLarge - 5}
                     color={COLORS.black}
                 />
-                <HeightSpacer height={10} />
+                <HeightSpacer height={10}/>
+                
+                <SettingTile title={'Terms of Service'} title1={""} />
+
+                <HeightSpacer height={3} />
+
+                <SettingTile title={'Privacy Policy'} title1={""} />
             </View>
         </View>
     )
