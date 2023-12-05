@@ -1,6 +1,6 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View, Image } from "react-native";
 import React from 'react';
-import { AssetImage } from '../../components'
+
 const Successful = () => {
     const hotel = {
         "_id": "64c67442776ed29f19727fd7",
@@ -14,9 +14,10 @@ const Successful = () => {
     return (
         <View >
             <View style={{ marginTop: "40%" }}>
-                <AssetImage data={require('../../assets/images/checked.png')}
+                <Image data={require('../../assets/images/checked.png')}
                     width={'100%'}
                     height={200}
+                    mode={'contain'}
                 />
             </View>
         </View>
@@ -24,3 +25,5 @@ const Successful = () => {
 }
 
 export default Successful
+const styles=StyleSheet.create
+
