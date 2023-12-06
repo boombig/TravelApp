@@ -3,7 +3,7 @@ import React from 'react';
 import { AppBar, HeightSpacer, ReusableBtn, ReusableTile } from "../../components";
 import { COLORS, SIZES } from "../../constants/theme";
 
-const SelectRoom = () => {
+const SelectRoom = ({ navigation }) => {
     const rooms = [
         {
             "_id": "64c631650298a05640539adc",
@@ -64,14 +64,14 @@ const SelectRoom = () => {
                 showsVerticalScrollIndicator={false}
                 keyExtractor={(item) => item._id}
                 renderItem={({ item }) => (
-                    <View style={{ marginHorizontal: 20, marginBottom: 10 }}>
-                        <View style={{ backgroundColor: COLORS.lightWhite, borderRadius: 12 }}>
+                    <View style={styles.tileColumn}>
+                        <View style={styles.title}>
                             <ReusableTile item={item} />
                             <HeightSpacer height={10} />
-                            <View style={{ margin: 10, alignItems: "center" }}>
+                            <View style={styles.btnStyle}>
                                 <ReusableBtn
-                                    onPress={() => navigation.navigate("Bottom")}
-                                    btnText={"Done"}
+                                    onPress={() => navigation.navigate("SelectedRoom", {item})}
+                                    btnText={"Select Room"}
                                     width={SIZES.width - 40}
                                     backgroundColor={COLORS.green}
                                     borderColor={COLORS.green}
@@ -88,3 +88,9 @@ const SelectRoom = () => {
 }
 
 export default SelectRoom
+
+const styles = StyleSheet.create({
+    tileColumn: { marginHorizontal: 20, marginBottom: 10 },
+    title: { backgroundColor: COLORS.lightWhite, borderRadius: 12 },
+    btnStyle: { margin: 10, alignItems: "center" },
+})

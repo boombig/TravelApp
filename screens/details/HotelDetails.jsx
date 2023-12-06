@@ -126,7 +126,7 @@ const HotelDetails = ({ navigation }) => {
                         </View>
                     </View>
                 </View>
-                <View style={[styles.container, { paddingTop: 90 }]}>
+                <View style={[styles.container]}>
                     <ReusableText
                         text={"Description"}
                         family={"medium"}
@@ -173,6 +173,7 @@ const HotelDetails = ({ navigation }) => {
                         family={"medium"}
                         size={SIZES.large}
                         color={COLORS.black}
+                        
                     />
                     <HeightSpacer height={10} />
                     <ReusableText
