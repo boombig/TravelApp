@@ -16,6 +16,7 @@ import HotelMap from "./Hotel/HotelMap";
 import ReviewsList from "./Hotel/ReviewsList";
 import ProfileTile from "./Reusable/ProfileTile";
 import SettingTile from "./Tiles/Settings/SettingTile";
+import Counter from "./Reusable/Counter";
 export{
     ReusableText,
     ReusableBtn,
@@ -34,5 +35,6 @@ export{
     HotelMap,
     ReviewsList,
     ProfileTile,
-    SettingTile
+    SettingTile,
+    Counter
 }
