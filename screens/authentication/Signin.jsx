@@ -15,9 +15,9 @@ const validationSchema = Yup.object().shape({
         .required('Required')
 })
 const Signin = () => {
-    const [{ loader, setLoader }] = useState(false);
-    // const [{ responseData, setResponseData }] = useState(null);
-    const [{ obsecureText, setObsecureText }] = useState(false);
+    const [ loader, setLoader ] = useState(false);
+    const [ responseData, setResponseData ] = useState(null);
+    const [ obsecureText, setObsecureText ] = useState(false);
     return (
         <View style={styles.container}>
             <Formik
