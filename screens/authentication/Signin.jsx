@@ -36,7 +36,7 @@ const Signin = () => {
                     isValid,
                     setFieldTouched
                 }) => (
-                    <View >
+                    <View style={{paddingTop: 30}}>
                         <View style={styles.warapper}>
                             <Text style={styles.label}>Email</Text>
                             <View>
@@ -108,8 +108,8 @@ const Signin = () => {
                         <HeightSpacer height={40} />
 
                         <ReusableBtn
-                            onPress={() => {}}
-                            btnText={"Signin"}
+                            onPress={handleSubmit}
+                            btnText={"SIGN IN"}
                             width={SIZES.width - 40}
                             backgroundColor={COLORS.green}
                             borderColor={COLORS.green}
