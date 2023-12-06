@@ -1,7 +1,7 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import React from 'react';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Home, Chat, Location, Profile, Successful } from "../screens";
+import { Home, Chat, Location, Profile, Successful, Failed } from "../screens";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { COLORS } from "../constants/theme";
 import TopTab from "./TopTab";
@@ -58,7 +58,7 @@ const BottomTabNavigation = () => {
                 }
             />
             <Tab.Screen
-                name="Chat" component={Successful} options={
+                name="Chat" component={Failed} options={
                     {
                         tabBarStyle: tabBarStyle,
                         tabBarShowLabel: false,
