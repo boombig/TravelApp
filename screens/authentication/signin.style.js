@@ -18,15 +18,22 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         alignItems: "center"
     }),
-    warapper:{
-        marginBottom:20
+    warapper: {
+        marginBottom: 20
     },
-    label:{
-        fontFamily:'regular',
+    label: {
+        fontFamily: 'regular',
         fontSize: SIZES.small,
-        marginBottom:5,
+        marginBottom: 5,
         marginEnd: 5,
-        textAlign:"right"
+        textAlign: "right"
+    },
+    errorsMessage: {
+        color: COLORS.red,
+        fontSize: SIZES.small,
+        fontFamily: 'regular',
+        marginTop: 5,
+        marginLeft: 5,
     }
 })
 
