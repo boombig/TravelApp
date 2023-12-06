@@ -16,7 +16,7 @@ const Failed = ({navigation}) => {
     return (
         <View >
             <View style={{ marginTop: "40%" }}>
-                <Image source={require('../../assets/images/Failed.png')}
+                <Image source={require('../../assets/images/Falied.png')}
                     style={{ alignSelf: 'center' }}
                 />
 
